@@ -15,3 +15,6 @@ and the `npm run start` to run the app
 - [Nishant](https://github.com/Nnishks) --fw19_0751
 - [Ismile](https://github.com/skismile) --fw18_0513
 - [Prashant](https://github.com/prashant3216) --fw18_0112
+
+## project deployed link
+https://bucolic-capybara-d0e8d4.netlify.app/
