@@ -41,7 +41,6 @@ const SignUp = () => {
       });
     } else {
       dispatch(signupAction(user)).then((res) => {
-        
         if (res.type == USER_SIGNUP_SUCCESSFULL) {
           toast({
             title: `${res.payload.message}`,
@@ -53,8 +52,7 @@ const SignUp = () => {
         } else {
           toast({
             title: `${res.payload}`,
-            description:
-              "please try with another email, or reset your password",
+            description: "",
             status: "error",
             duration: 2000,
             isClosable: true,

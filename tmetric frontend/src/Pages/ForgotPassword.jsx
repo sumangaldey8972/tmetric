@@ -38,7 +38,7 @@ const ForgotPassword = () => {
       } else {
         toast({
           title: `${res.payload}`,
-          description: "please provide correct details",
+          description: "",
           status: "error",
           duration: 2000,
           isClosable: true,

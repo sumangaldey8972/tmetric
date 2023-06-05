@@ -17,14 +17,17 @@ import axios from "axios";
 import { base_url } from "../../actions/api";
 
 export const signupAction = (creds) => async (dispatch) => {
+  console.log("creds", creds);
   dispatch({ type: USER_SIGNUP_LOADING });
   try {
     let response = await axios.post(`${base_url}user/signup`, creds);
+    console.log("signup res", response);
     return dispatch({
       type: USER_SIGNUP_SUCCESSFULL,
       payload: response.data,
     });
   } catch (err) {
+    console.log("signup err", err.response.data.message);
     return dispatch({
       type: USER_SIGNUP_ERROR,
       payload: err.response.data.message,
